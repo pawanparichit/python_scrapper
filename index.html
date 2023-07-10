@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+        <title>Website Scraper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 180px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #7ff59f;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group textarea {
+            width: 100%;
+            height: 150px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        
+        .form-group button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #29100d;
+            color: #f7f5f5;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>समाचारको खोजी </h1>
+        <form action="/scrape" method="POST">
+            <div class="form-group">
+                <label for="url">Enter the URL:</label>
+                <textarea id="url" name="url" placeholder="Enter the URL"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Scrape</button>
+            </div>
+        </form>
+</body>
+</html>

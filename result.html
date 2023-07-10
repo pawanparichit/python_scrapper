@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scraping Results</title>
+    <style>
+        /* Styling the body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* Styling the headings */
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        /* Styling the table */
+        table {
+            margin: 0 auto;
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        a {
+            color: #00a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling the specific element */
+        p {
+            color: #444;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scraping Results</h1>
+
+    <h2>Links:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Links</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for link in links %}
+                <tr>
+                    <td><a href="{{ link }}">{{ link }}</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+   
+
+</body>
+</html>
